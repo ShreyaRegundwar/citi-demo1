@@ -4,7 +4,7 @@ import { DefaultComponent } from './layouts/default/default.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { UploadComponent } from './modules/upload/upload.component';
 import { SanctionComponent } from './modules/sanction/sanction.component';
-import { ArticlesComponent } from './modules/articles/articles.component';
+
 const routes: Routes = [{
   path : '',
   component : DefaultComponent ,
@@ -19,10 +19,7 @@ const routes: Routes = [{
     component : SanctionComponent
   }
 
-  ,{
-    path :'Articles',
-    component : ArticlesComponent
-  }
+  
 ]
 
 }];

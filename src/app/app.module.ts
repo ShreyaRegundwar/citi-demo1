@@ -16,11 +16,11 @@ import { RouterModule, Routes }   from '@angular/router';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { SharedModule } from './shared/shared.module';
-import { ArticlesComponent } from './modules/articles/articles.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    ArticlesComponent,
+
     
   ],
   imports: [
