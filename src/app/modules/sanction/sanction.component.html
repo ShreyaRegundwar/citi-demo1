@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="sanction.component.scss">
+  </head>
+
+  <body class="b">
+    <div style="width: 50%; margin-left: 20%;">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Branch</th>
+            <th scope="col">Division</th>
+            <th scope="col">Roll no</th>
+            <th scope="col">C no</th>
+            <th scope="col">Pass no</th>
+            <th scope="col">abcd</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of excelData">
+            <th scope="row">{{ data.Name }} </th>
+            <td>{{ data.Branch }}</td>
+            <td>{{ data.Division }}</td>
+            <td>{{ data.Rollno }}</td>
+            <td>{{ data.Cno }}</td>
+            <td>{{ data.Passno }}</td>
+            <td>{{ data.abcd}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
