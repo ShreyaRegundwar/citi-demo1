@@ -8,25 +8,28 @@
     <div style="width: 50%; margin-left: 20%;">
       <table class="table table-striped">
         <thead>
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Branch</th>
-            <th scope="col">Division</th>
-            <th scope="col">Roll no</th>
-            <th scope="col">C no</th>
-            <th scope="col">Pass no</th>
-            <th scope="col">abcd</th>
+        <tr>
+            <th scope="col">Transaction ID</th>
+            <th scope="col">Date</th>
+            <th scope="col">Payer Name</th>
+            <th scope="col">Payer Account</th>
+            <th scope="col">Payee Name</th>
+            <th scope="col">Payee Account</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Status</th>
+
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let data of excelData">
-            <th scope="row">{{ data.Name }} </th>
-            <td>{{ data.Branch }}</td>
-            <td>{{ data.Division }}</td>
-            <td>{{ data.Rollno }}</td>
-            <td>{{ data.Cno }}</td>
-            <td>{{ data.Passno }}</td>
-            <td>{{ data.abcd}}</td>
+            <th scope="row">{{ data.TransactionID }} </th>
+            <td>{{ data.Date }}</td>
+            <td>{{ data.PayerName }}</td>
+            <td>{{ data.PayerAccount }}</td>
+            <td>{{ data.PayeeName }}</td>
+            <td>{{ data.PayeeAccount }}</td>
+            <td>{{ data.Amount}}</td>
+            <td>{{ data.Status}}</td>
           </tr>
         </tbody>
       </table>
